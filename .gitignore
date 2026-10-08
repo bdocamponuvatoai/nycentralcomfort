@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Next.js / build output
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# Environment (only the example is tracked)
+.env*
+!.env.example
+
+# Vercel
+.vercel
+
+# Testing
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Image masters: *.original.* files are byte-identical copies of the masters
+assets-src/**/*.original.*
+
+# Local only
+_old-static/
+tmp/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+npm-debug.log*
+.idea/
+.vscode/*
+!.vscode/extensions.json

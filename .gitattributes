@@ -1,0 +1,18 @@
+# Normalise line endings in the repo; check out LF everywhere (Windows included).
+* text=auto eol=lf
+
+# Binary web assets (stored directly: small, needed by the build)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.avif binary
+*.ico binary
+*.mp4 binary
+*.webm binary
+*.woff2 binary
+
+# Full-size design masters (not needed to build the site) live in Git LFS.
+assets-src/**/*.png filter=lfs diff=lfs merge=lfs -text
+assets-src/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+assets-src/**/*.jpeg filter=lfs diff=lfs merge=lfs -text
